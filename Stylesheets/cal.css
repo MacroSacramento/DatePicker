@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#calendarOverlay{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+#calendar{
+    position: fixed;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 1%;
+    text-align: center;
+}
+[class*="col-"]{
+    text-align: center;
+    float: left;
+    width: 14.2%;
+    padding: auto;
+    margin: 0px;
+    padding: 0px;
+    height: 90%;
+    vertical-align: middle;
+}
+[class*="row-"]{
+    height: 12%;
+    text-align: center;
+}
+.nonCal{
+    height: 100%;
+    width: 14.2%;
+    background-color: lightgray !important;
+}
+.header ul{
+    list-style-type: none;
+    text-align: center;
+}
+.header{
+    text-align: center;
+    height: 14.2%;
+    width: 100%; 
+    font-weight: bold;   
+}
+.header > ul > li{
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.selected{
+    border: solid .1px black;
+}
+.close{
+    float: right;
+    font-weight: bold;
+    color: slateblue;
+}
+.blankClose{
+    color: white;
+    float: left;
+    visibility: false;
+}
